@@ -17,6 +17,9 @@ export default class Class {
   @Column()
   duration: number;
 
+  @Column()
+  exp: number;
+
   @CreateDateColumn()
   created_at: Date;
 
