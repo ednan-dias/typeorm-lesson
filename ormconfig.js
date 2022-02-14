@@ -40,7 +40,7 @@ NODE_ENV === 'development'
       extra: {
         ssl: { rejectUnauthorized: false },
       },
-      entities: NODE_ENV === 'development'['dist/models/**/*.js'],
+      entities: ['dist/models/**/*.js'],
       migrations: ['dist/database/migrations/**/*.js'],
       cli: {
         migrationsDir: 'src/database/migrations/',
