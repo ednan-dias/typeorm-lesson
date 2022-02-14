@@ -1,6 +1,6 @@
 import { MigrationInterface, QueryRunner } from 'typeorm';
 
-export default class PopulateClass1644872998931 implements MigrationInterface {
+export default class PopulateClass1644875771384 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(
       "INSERT INTO class (name, duration) VALUES ('Engenharia de Software', 60)",
