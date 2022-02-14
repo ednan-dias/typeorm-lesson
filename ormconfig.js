@@ -4,6 +4,8 @@ const { DATABASE_URL, NODE_ENV } = process.env;
 module.exports = {
   type: 'postgres',
   url: DATABASE_URL,
+  ssl: true,
+  extra: { ssl: { rejectUnauthorized: false } },
   entities:
     NODE_ENV === 'development'
       ? ['src/models/**/*.ts']
